@@ -13,7 +13,7 @@
 package org.flowable;
 
 import org.flowable.engine.impl.asyncexecutor.message.AbstractMessageBasedJobManager;
-import org.flowable.engine.runtime.JobInfo;
+import org.flowable.job.api.JobInfo;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 
 public class RabbitMQMessageBasedJobManager extends AbstractMessageBasedJobManager {

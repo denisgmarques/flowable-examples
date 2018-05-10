@@ -62,7 +62,7 @@ public class ProcessApplication {
     @Bean
     public DataSource dataSource() {
         
-        String jdbcUrl = "jdbc:mysql://localhost/demo?useSSL=false";
+        String jdbcUrl = "jdbc:mysql://localhost/flowable?useSSL=false";
         String jdbcDriver = "com.mysql.jdbc.Driver";
         String jdbcUsername = "flowable";
         String jdbcPassword = "flowable";

@@ -122,7 +122,7 @@ public class Configuration {
         SpringProcessEngineConfiguration config = new SpringProcessEngineConfiguration();
         config.setDataSource(dataSource());
         config.setTransactionManager(transactionManager());
-        config.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_DROP_CREATE);
+        config.setDatabaseSchemaUpdate(ProcessEngineConfiguration.DB_SCHEMA_UPDATE_FALSE); //DB_SCHEMA_UPDATE_DROP_CREATE);
 
         config.setAsyncHistoryEnabled(true);
         config.setAsyncHistoryExecutorActivate(true);

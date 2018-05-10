@@ -40,15 +40,15 @@ public class Configuration {
     public DataSource dataSource() {
 
         // MySQL
-//        String jdbcUrl = "jdbc:mysql://localhost:3306/flowable?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC";
-//        String jdbcDriver = "com.mysql.jdbc.Driver";
-//        String jdbcUsername = "flowable";
-//        String jdbcPassword = "flowable";
+        String jdbcUrl = "jdbc:mysql://localhost:3306/flowable?useSSL=false&characterEncoding=UTF-8&serverTimezone=UTC";
+        String jdbcDriver = "com.mysql.jdbc.Driver";
+        String jdbcUsername = "flowable";
+        String jdbcPassword = "flowable";
 
-        String jdbcUrl = "jdbc:h2:mem:flowable;DB_CLOSE_DELAY=1000;MVCC=TRUE";
-        String jdbcDriver = "org.h2.Driver";
-        String jdbcUsername = "sa";
-        String jdbcPassword = "";
+//        String jdbcUrl = "jdbc:h2:mem:flowable;DB_CLOSE_DELAY=1000;MVCC=TRUE";
+//        String jdbcDriver = "org.h2.Driver";
+//        String jdbcUsername = "sa";
+//        String jdbcPassword = "";
 
         HikariDataSource dataSource = new HikariDataSource();
         dataSource.setJdbcUrl(jdbcUrl);
@@ -139,7 +139,7 @@ public class Configuration {
     @Bean
     public HistoryJobMessageListener historyJobsMessageListener() {
         HistoryJobMessageListener historyJobMessageListener = new HistoryJobMessageListener();
-        historyJobMessageListener.setProcessEngineConfiguration(processEngineConfiguration());
+        //historyJobMessageListener.setProcessEngineConfiguration(processEngineConfiguration());
         return historyJobMessageListener;
     }
 

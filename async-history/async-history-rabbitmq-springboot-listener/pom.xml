@@ -16,7 +16,7 @@
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-		<flowable.version>6.1.1</flowable.version>
+		<flowable.version>6.3.0</flowable.version>
 	</properties>
 
 	<dependencies>
@@ -33,6 +33,16 @@
 		<dependency>
 			<groupId>org.flowable</groupId>
 			<artifactId>flowable-spring</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-job-service</artifactId>
+			<version>${flowable.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.flowable</groupId>
+			<artifactId>flowable-job-service-api</artifactId>
 			<version>${flowable.version}</version>
 		</dependency>
 		<!-- Database driver -->

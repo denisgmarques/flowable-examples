@@ -12,10 +12,10 @@
  */
 package org.flowable;
 
-import org.flowable.engine.impl.history.async.message.AsyncHistoryJobMessageHandler;
-import org.flowable.engine.impl.persistence.entity.HistoryJobEntity;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import org.flowable.engine.impl.history.async.message.AsyncHistoryJobMessageHandler;
+import org.flowable.job.service.impl.persistence.entity.HistoryJobEntity;
 
 public class MyJobMessageHandler implements AsyncHistoryJobMessageHandler {
 
