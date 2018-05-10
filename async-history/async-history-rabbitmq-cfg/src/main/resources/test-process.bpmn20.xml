@@ -87,7 +87,8 @@
     <sequenceFlow id="sid-A691B651-5001-4450-8B34-1CEAE77A83E1" sourceRef="sid-A1874D3E-D556-4D03-B0D4-A80CBE130AFD" targetRef="sid-1558F7CE-2BB1-4AE6-B2AD-E4BFFA9A4C79"></sequenceFlow>
     <sequenceFlow id="sid-144D0077-8405-4DA0-B922-B6E863778381" sourceRef="sid-1558F7CE-2BB1-4AE6-B2AD-E4BFFA9A4C79" targetRef="userTask01"></sequenceFlow>
     <scriptTask id="sid-A1874D3E-D556-4D03-B0D4-A80CBE130AFD" name="Set Customer" scriptFormat="JavaScript" flowable:autoStoreVariables="false">
-      <script><![CDATA[execution.setVariable("customer", "John Tower");]]></script>
+      <script><![CDATA[execution.setVariable("customer", "John Tower");
+execution.setVariable("city", "New York - NY");]]></script>
     </scriptTask>
     <scriptTask id="sid-1558F7CE-2BB1-4AE6-B2AD-E4BFFA9A4C79" name="Set Address" scriptFormat="JavaScript" flowable:autoStoreVariables="false">
       <script><![CDATA[execution.setVariable("address", "5th avenue, 2300 - floor 8");]]></script>
